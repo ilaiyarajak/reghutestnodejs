@@ -4,7 +4,7 @@ var http = require('http'); //add the http module
 var myServer = http.createServer(function (request, response) {
   // Return something from server
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello Node\n");
+  response.end("Hello Node updated\n");
 }); //create a server
 
 //Bind server to a port
