@@ -8,6 +8,6 @@ var myServer = http.createServer(function (request, response) {
 }); //create a server
 
 //Bind server to a port
-myServer.listen(3000);
+myServer.listen(process.env.PORT, process.env.IP);
 
 console.log("Go to localhost:3000 on your browser");
